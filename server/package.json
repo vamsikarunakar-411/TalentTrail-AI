@@ -1,0 +1,27 @@
+{
+  "name": "ai-interview-server",
+  "version": "1.0.0",
+  "description": "Backend API gateway for AI Interview Chatbot",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test:resume": "node test_resume_api.js",
+    "test:parser": "node test_generalized_resume_parser.js",
+    "test:voice": "node test_voice_and_lifecycle_regression.js",
+    "test:audit": "node test_simulation_and_voice_verification.js",
+    "test:e2e": "node test_assignment_e2e_validation.js",
+    "test:absence": "node test_camera_and_face_absence.js",
+    "test:languages": "node test_six_languages_independent.js",
+    "test": "node test_resume_api.js && node test_generalized_resume_parser.js && node test_interview_api.js && node test_voice_and_lifecycle_regression.js && node test_simulation_and_voice_verification.js && node test_assignment_e2e_validation.js && node test_camera_and_face_absence.js && node test_six_languages_independent.js"
+  },
+  "dependencies": {
+    "@google/genai": "^2.30.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1",
+    "pdf-parse": "^1.1.1"
+  }
+}

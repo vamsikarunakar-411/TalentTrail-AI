@@ -1,0 +1,12 @@
+{
+  "name": "talenttrail-ai-root",
+  "version": "1.0.0",
+  "description": "TalentTrail AI — Autonomous Voice Interview Experience with Ismav",
+  "private": true,
+  "scripts": {
+    "server:dev": "npm --prefix server run dev",
+    "server:start": "npm --prefix server start",
+    "client:dev": "npm --prefix client run dev",
+    "client:build": "npm --prefix client run build"
+  }
+}
